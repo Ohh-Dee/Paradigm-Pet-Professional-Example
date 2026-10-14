@@ -130,3 +130,25 @@ main section:last-child { border-bottom: none; }
   .hero, .cards, .values, .two-col { grid-template-columns: 1fr; }
   .section-img { float: none; width: 100%; max-width: none; margin: 0 0 16px; }
 }
+
+.form-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; align-items: start; }
+.consult-form fieldset {
+  border: 1px solid var(--silver); border-radius: 6px;
+  padding: 16px 24px 24px; margin: 0 0 24px;
+}
+.consult-form legend { color: var(--navy); font-weight: bold; font-size: 20px; padding: 0 8px; }
+.form-row { margin-bottom: 16px; }
+.form-row label { display: block; font-weight: bold; color: var(--navy); margin-bottom: 4px; }
+.form-row input, .form-row select {
+  width: 100%; padding: 10px; font-size: 16px; font-family: inherit;
+  border: 1px solid var(--gray); border-radius: 4px; background: #fff;
+}
+.form-row input:focus, .form-row select:focus { border-color: var(--navy); outline: 3px solid var(--sky); }
+.form-row input:user-invalid, .form-row select:user-invalid { border: 2px solid #B00020; }
+.required { color: #B00020; }
+.form-aside img { width: 100%; height: auto; border-radius: 6px; }
+.form-aside h2 { margin-bottom: 8px; }
+
+@media (max-width: 700px) {
+  .form-layout { grid-template-columns: 1fr; }
+}

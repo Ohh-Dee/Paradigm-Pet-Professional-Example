@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a New Pet Consultation | Paradigm Pet Professionals</title>
+  <meta name="description" content="Request a virtual new pet care consultation with a Paradigm Pet Professionals Pexpert. We reply within 48 hours.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Paradigm Pet Professionals logo">
+        <span class="slogan">Evidence-based pet care advice for every pet lover</span>
+      </a>
+      <form class="search" role="search" action="#">
+        <label for="site-search">Search the site</label>
+        <div class="search-row">
+          <input type="search" id="site-search" name="q" placeholder="Search...">
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Primary">
+    <div class="container nav-inner">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs.html">Dog Owners</a></li>
+        <li><a href="cats.html">Cat Owners</a></li>
+        <li><a href="birds.html">Bird Owners</a></li>
+      </ul>
+      <a href="consultation.html" class="nav-cta active" aria-current="page">Request a Consultation</a>
+    </div>
+  </nav>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a> <span aria-hidden="true">&gt;</span>
+      <span aria-current="page">Request a Consultation</span>
+    </div>
+  </nav>
+
+  <main id="main" class="container">
+    <section>
+      <h1>Request a Virtual Consultation</h1>
+      <p>Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. <strong>All fields are required.</strong></p>
+
+      <div class="form-layout">
+        <div>
+          <form id="consult-form" class="consult-form" action="#">
+            <fieldset>
+              <legend>About You</legend>
+              <div class="form-row">
+                <label for="name">Full name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone number <span class="required" aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(555) 555-5555" required>
+              </div>
+              <div class="form-row">
+                <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+              </div>
+              <div class="form-row">
+                <label for="timezone">Time zone <span class="required" aria-hidden="true">*</span></label>
+                <select id="timezone" name="timezone" required>
+                  <option value="" disabled selected>Select your time zone</option>
+                  <option>Eastern Time (ET)</option>
+                  <option>Central Time (CT)</option>
+                  <option>Mountain Time (MT)</option>
+                  <option>Pacific Time (PT)</option>
+                  <option>Alaska Time (AKT)</option>
+                  <option>Hawaii-Aleutian Time (HT)</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>About Your Pet</legend>
+              <div class="form-row">
+                <label for="pet-name">Pet's name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="pet-name" name="pet-name" required>
+              </div>
+              <div class="form-row">
+                <label for="pet-type">Type of pet <span class="required" aria-hidden="true">*</span></label>
+                <select id="pet-type" name="pet-type" required>
+                  <option value="" disabled selected>Select a pet type</option>
+                  <option>Dog</option>
+                  <option>Cat</option>
+                  <option>Bird</option>
+                  <option>Fish</option>
+                  <option>Small animal</option>
+                  <option>Reptile</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="pet-age">Pet's age <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="pet-age" name="pet-age" placeholder="e.g., 8 weeks or 3 years" required>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="button">Submit Request</button>
+          </form>
+
+          <div id="confirmation" class="callout" role="status" tabindex="-1" hidden>
+            <h2>Thank you!</h2>
+            <p>Your consultation request has been received. A Pexpert will contact you within 48 hours to schedule your consultation.</p>
+            <a href="index.html">Return to Home</a>
+          </div>
+        </div>
+
+        <aside class="form-aside">
+          <img src="images/consultation.jpg" alt="A pet professional meeting with a client">
+          <h2>What to Expect</h2>
+          <ul>
+            <li>A one-on-one virtual consultation with a Pexpert</li>
+            <li>Tailored, evidence-based pet care advice</li>
+            <li>Help choosing the right pet or navigating adoption</li>
+            <li>A reply within 48 hours</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dog Owners</a></li>
+          <li><a href="cats.html">Cat Owners</a></li>
+          <li><a href="birds.html">Bird Owners</a></li>
+          <li><a href="consultation.html">Request a Consultation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Adoption Resources</h2>
+        <ul>
+          <li><a href="https://bestfriends.org/pet-care-resources/issues/pet-adoption-resources" target="_blank" rel="noopener">General Pet Resources</a></li>
+          <li><a href="https://www.aspca.org/" target="_blank" rel="noopener">ASPCA</a></li>
+          <li><a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank" rel="noopener">Fish Rescue</a></li>
+          <li><a href="https://savethesnakes.org/snakerescuecall/" target="_blank" rel="noopener">Snake Rescue</a></li>
+          <li><a href="https://ftlob.rescuegroups.org/" target="_blank" rel="noopener">Bird Rescue</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>Virtual consultations with our Pexperts.<br>We reply within 48 hours.</p>
+        <p><a href="consultation.html">Request a Consultation</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Paradigm Pet Professionals</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('consult-form');
+    const confirmation = document.getElementById('confirmation');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      form.hidden = true;
+      confirmation.hidden = false;
+      confirmation.focus();
+    });
+  </script>
+</body>
+</html>
